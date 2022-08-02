@@ -1,0 +1,37 @@
+.left-side {
+    display: flex;
+    flex-direction: column;
+
+    .image-container {
+        height: 10rem;
+        border-bottom: 1px dashed var(--color4);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        .image {
+            border-radius: 50%;
+            background-color: var(--color3);
+            width: 5rem;
+            height: 5rem;
+        }
+        .login-logout {
+            margin: 1rem 0;
+            color: var(--color4);
+            cursor: pointer;
+        }
+    }
+    .info-container {
+        border-bottom: 1px dashed var(--color4);
+        .info-line {
+            display: flex;
+            align-items: center;
+            height: 2rem;
+            color: var(--color4);
+            padding: 0 0.5rem
+        }
+        .info-line:nth-child(odd) {
+            background-color: var(--color2);
+        }
+    }
+}

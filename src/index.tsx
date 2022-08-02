@@ -1,19 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { LeftSideComponent } from './@main/left-side/left-side';
+import { RightSideComponent } from './@main/right-side/right-side';
+import './@style/index.scss';
 
+import { LayoutComponent } from './@style/layout/layout';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <LayoutComponent>
+      <LeftSideComponent key='left-side' />
+      <RightSideComponent key='right-side' />
+    </LayoutComponent>
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
