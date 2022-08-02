@@ -1,17 +1,16 @@
 import './layout.scss';
-import PropTypes from 'prop-types';
+import { LeftSideComponent } from '../../@pages/main/left-side/left-side';
+import { RightSideComponent } from '../../@pages/main/right-side/right-side';
 
 export const LayoutComponent = (props: any) => {
-    const leftSide = props.children.find((c: { key: string }) => c.key === 'left-side');
-    const rightSide = props.children.find((c: { key: string }) => c.key === 'right-side');
     return(
         <div className="layout">
             <div className="left">
-                { leftSide }
+                <LeftSideComponent />
             </div>
             <div className="right">
-                { rightSide }
+                <RightSideComponent />
             </div>
         </div>
     );
-}
+};

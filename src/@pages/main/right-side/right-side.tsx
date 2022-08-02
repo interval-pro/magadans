@@ -1,5 +1,5 @@
 import './right-side.scss';
-import { GridBoxComponent } from './grid-box/grid-box';
+import { GridBoxComponent } from '../../../@shared/components/grid-box/grid-box';
 
 export const RightSideComponent = () => {
     return (
