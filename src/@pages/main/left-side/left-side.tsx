@@ -5,7 +5,7 @@ import avatar from '../../../@style/assets/avatar.png';
 import { useNavigate } from 'react-router-dom';
 
 export const LeftSideComponent = () => {
-    const [isLoggedIn, setLoggedIn] = useState(false);
+    const isLoggedIn = false;
     const navigate = useNavigate();
 
     const goToLogin = () => navigate('/login');

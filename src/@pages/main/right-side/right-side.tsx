@@ -6,8 +6,8 @@ export const RightSideComponent = () => {
         <div className="grid-container">
             <div className="top-side">
                 <div className="left-top-side">
-                    <GridBoxComponent title='Orderbook'>
-                        <div className="orderbook"></div>
+                    <GridBoxComponent title='Buy/Sells'>
+                        <div className="buy-sell"></div>
                     </GridBoxComponent>
                 </div>
                 <div className="center-top-side">
@@ -16,8 +16,8 @@ export const RightSideComponent = () => {
                     </GridBoxComponent>
                 </div>
                 <div className="right-top-side">
-                    <GridBoxComponent title='Info'>
-                        <div className="info"></div>
+                    <GridBoxComponent title='Orderbook'>
+                        <div className="orderbook"></div>
                     </GridBoxComponent>
                 </div>
             </div>
